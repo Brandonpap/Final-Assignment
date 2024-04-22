@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Styles/Styles.css">
+    <link rel="about me page" href="About.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Home Page</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <img src="Styles/Assets/Bp Designs.png" alt="Bp Designs Logo">
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <h2>Undeadsurfing</h2>
+            <div class="accordion">
+                <button class="accordion-btn">Main Logos</button>
+                <div class="accordion-panel">
+                    <div class="image-container">
+                        <img src="Styles/Assets/Undead Surfing copy.png" alt="Black and white skeleton of a hammerhead shark logo with a surf board in it">
+                    </div>
+                    <p>A logo I designed for a made up surf brand called Undeadsurfing.</p>
+                    <button class="project-btn">View Details</button>
+                </div>
+
+                <div class="accordion">
+                    <button class="accordion-btn">Gold Logo</button>
+                    <div class="accordion-panel">
+                        <div class="image-container">
+                            <img src="Styles/Assets/Undead Surfing Gold copy.png" alt="Gold skeleton of a hammerhead shark with a surfboard through it on a dark grey background">
+                        </div>
+                        <p>An alternate colour for the original logo.</p>
+                        <button class="project-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <button class="accordion-btn">Simple Logo</button>
+                    <div class="accordion-panel">
+                        <div class="image-container">
+                            <img src="Styles/Assets/Undead Surfing Simple copy.png" alt="A black and white U with a surfboard after it and a S after that.">
+                        </div>
+                        <p>A simplified logo for the brand intended for socialmedia profiles and other applications.</p>
+                        <button class="project-btn">View Details</button>
+                    </div>
+                </div>
+
+                <button class="accordion-btn">Surf Poster</button>
+                <div class="accordion-panel">
+                    <div class="image-container">
+                        <img src="Styles/Assets/Undeadsurfing Poster copy.png" alt="A Blue, Grey and yellow vintage Surfpoaster for the Topanga surf contest with a hammerhead shark graphic.">
+                    </div>
+                    <p>A mock poster for a surfcontest run by Undeadsurfing.</p>
+                    <button class="project-btn">View Details</button>
+                </div>
+
+                <div class="accordion">
+                    <button class="accordion-btn">Instagram Ad</button>
+                    <div class="accordion-panel">
+                        <div class="image-container">
+                            <img src="Styles/Assets/Undead Surfing Contest Ad copy.png" alt="Instagram post with a man surfing on a wave to the left of the ad and a box with info for the surf event.">
+                        </div>
+                        <p>A mock Instagram ad for a surf contest run by Undeadsurfing.</p>
+                        <button class="project-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="footer">
+        <footer class="footer">
+          <div class="container">
+            <p>&copy; <span id="year"></span> Brandon Paprocke. All rights reserved.</p>
+        </footer>
+        
+        <script>
+          document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+        </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionButtons = document.querySelectorAll('.accordion-btn');
+            const projectButtons = document.querySelectorAll('.project-btn');
+
+            accordionButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    button.classList.toggle('active');
+                    const panel = button.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + 'px';
+                    }
+                });
+            });
+
+            projectButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    alert('Grahpic was made in April 2024.');
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

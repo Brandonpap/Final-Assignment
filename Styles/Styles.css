@@ -1,0 +1,134 @@
+body {
+        font-family: "Rosarivo", cursive;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header*/
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Nav */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Main */
+main {
+    padding: 50px 0;
+}
+
+/* Accordian*/
+.accordion {
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.accordion-btn {
+    background-color: #333;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.accordion-btn:hover {
+    background-color: #000000;
+}
+
+.accordion-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.active {
+    background-color: #333;
+}
+/* Imgaes*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.image-with-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-with-text img {
+    max-width: 50%;
+    margin-right: 20px;
+}
+
+.image-with-text p {
+    margin: 0;
+}
+
+.image-container {
+    max-width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+/*Info Button*/
+
+.info-box {
+    border: 1px solid #333;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #dbdbdb;
+    padding: 20px 0;
+    text-align: center;
+}
